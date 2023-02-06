@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍡japanese Sweets🍡</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to top,
+
+          #e6dee9 0%,
+          #eaf6f6 1%,
+          #fdcbf1 100%
+        );
+        color: #379956;
+        width: 50%;
+        margin: 62px auto;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid #a8d3da;
+        padding: 20px;
+        color: #00cdac;
+        border-radius: 45px;
+        background-color: #e6dee9;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3);
+      }
+      h2 {
+        text-align: center;
+        border: 2px solid #b6d95b;
+        color: #84ea92;
+        background-color: #f2e5fa;
+        padding: 10px 10px 10px;
+        font-size: 22px;
+        border-radius: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.3);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 100%;
+
+        border: none;
+        border-radius: 30px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 24px;
+        margin: 20px 20px 10px;
+        padding: 15px, 20px;
+        text-align: justify;
+        color: #6c3779;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        background-color: #f5cab3;
+        color: #fcfefe;
+        font-size: 24px;
+        padding: 15px 20px;
+        opacity: 1;
+        border: none;
+        border-radius: 45px;
+        text-transform: uppercase;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3);
+        transition: opacity 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background-color: #ccda46;
+        transition: all 200ms ease-in-out;
+      }
+      h1:hover {
+        background-color: #ccda46;
+        transition: all 200ms ease-in-out;
+        cursor: not-allowed;
+        color: coral;
+      }
+      h2:hover {
+        background-color: #ccda46;
+        transition: all 200ms ease-in-out;
+        cursor: not-allowed;
+        color: #fe9801;
+      }
+
+      a {
+        color: #1a7070;
+        padding: 15px 20px;
+        opacity: 1;
+      }
+      .multiColor {
+        background-color: linear-gradient(
+          106.4deg,
+          rgb(255, 104, 192) 11.1%,
+          rgb(104, 84, 249) 81.3%
+        );
+      }
+      div.container {
+        display: block;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3);
+
+        background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+        padding: 15px, 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+      .learn-more {
+        text-decoration: none;
+
+        font-size: 12px;
+      }
+      .learn-more:hover {
+        text-decoration: 2px underline #ffc60b;
+      }
+      .footer {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 15px;
+      }
+      .creaTor {
+        color: #fb8d62;
+      }
+      hr.new1 {
+        border: 1px dotted #fd2eb3;
+      }
+      hr.new2 {
+        border: 1px dotted #f6318c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        I love
+        <span class="multiColor"><em>japanese sweets</em></span>
+      </h1>
+      <h2>Specially Dango</h2>
+      <hr class="new1" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/817/original/Dango-Rezept.jpg?1667736949"
+        alt="Mochi and Dango"
+        width="300"
+      />
+      <hr class="new2" />
+      <p>
+        <strong><em>Dango</em></strong> is a Japanese dumpling made from rice
+        flour mixed with uruchi rice flour and glutinous rice flour. It is
+        different from the method of making mochi, which is made after steaming
+        glutinous rice. Dango is usually finished round shaped, three to five
+        dango are often served on a skewer.<br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Dango"
+        target="_blank"
+        class="learn-more"
+        >📖👩‍🏫 You Can Read More on Wikipedia</a
+      >
+      <button class="buy-button">🍡Buy Dango Online🍡</button>
+      <br />
+      <p class="footer">
+        page was build by
+        <span class="creaTor">Shahrzad Babaei. 👩‍💻</span>
+      </p>
+    </div>
+    <script>
+      function buyDango() {
+        let heading = document.querySelector("h1");
+        let heading1 = document.querySelector("h2");
+        alert("You should log in first!!😊");
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email Address?");
+        if (email.length > 0) {
+          let emogi = prompt("What is your favorite emoji?");
+          let amount = prompt("How many packet of Dango you want to order?");
+          if (amount > 10) {
+            alert(
+              "Thank you " +
+                name +
+                "! We'll be sending the " +
+                amount +
+                " packets of Dango, as soon as you complete the order!🍡🍡🍡" +
+                emogi +
+                " ALSO YOU ARE GOLD MEMBER NOW 🥇"
+            );
+            heading.innerHTML =
+              "Have Nice Day " +
+              name +
+              " Please wait for confirmation!⏳⏳ " +
+              emogi;
+            heading1.innerHTML = "Gold 🥇";
+          } else {
+            alert(
+              "Thank you " +
+                name +
+                "! We'll be sending the " +
+                amount +
+                " packet of Dango, as soon as you complete the order!🍡" +
+                emogi +
+                " ALSO YOU ARE SILVER MEMBER NOW 🥈"
+            );
+          }
+          heading.innerHTML =
+            "Have Nice Day " +
+            name +
+            " Please wait for confirmation!⏳⏳ " +
+            emogi;
+          heading1.innerHTML = "Silver 🥈";
+        } else {
+          alert("Email address in not in valid format, Please try again😊😉");
+          email = prompt("What is your email Address?");
+          let emogi = prompt("What is your favorite emoji?");
+          let amount = prompt("How many packet of Dango you want to order?");
+          if (amount > 10) {
+            alert(
+              "Thank you " +
+                name +
+                "! We'll be sending the " +
+                amount +
+                " packets of Dango, as soon as you complete the order!🍡🍡🍡" +
+                emogi +
+                " ALSO YOU ARE GOLD MEMBER NOW 🥇"
+            );
+            heading.innerHTML =
+              "Have Nice Day " +
+              name +
+              " Please wait for confirmation!⏳⏳ " +
+              emogi;
+            heading1.innerHTML = "Gold 🥇";
+          } else {
+            alert(
+              "Thank you " +
+                name +
+                "! We'll be sending the " +
+                amount +
+                " packet of Dango, as soon as you complete the order!🍡" +
+                emogi +
+                " ALSO YOU ARE SILVER MEMBER NOW 🥈"
+            );
+          }
+          heading.innerHTML =
+            "Have Nice Day " +
+            name +
+            " Please wait for confirmation!⏳⏳ " +
+            emogi;
+          heading1.innerHTML = "Silver 🥈";
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buyDango);
+    </script>
+  </body>
+</html>
